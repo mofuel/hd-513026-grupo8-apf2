@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!--letra carrusel-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (íconos) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="stylenosotros.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<body>
+
+<!--header-->
+<nav class="navbar">
+    <div class="header-wrapper">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logitoo.png" alt="Logo">
+      </a>
+
+      <!-- Menú de navegación -->
+      <ul class="navbar-nav flex-row align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html"><i class="fa-solid fa-users"></i> Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-concierge-bell"></i> Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-pen-to-square"></i> Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+        <!--fin header-->
+
+    <!--carrusel-->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <!-- Primer slide: Quiénes somos (resumen visual) -->
+        <div class="carousel-item active">
+            <img src="img/eco1.png" class="d-block w-100" alt="Nuestra misión ambiental">
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Por un futuro sostenible</h1>
+                    <p>En <strong>EcoHorizonte</strong> trabajamos para educar y empoderar a las comunidades en el cuidado del medio ambiente y la promoción de prácticas sostenibles.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Segundo slide: Educación y acción -->
+        <div class="carousel-item">
+            <img src="img/eco3.png" class="d-block w-100" alt="Educación ambiental">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Educación con impacto</h1>
+                    <p>Promovemos la conciencia ecológica a través de programas educativos, talleres y campañas comunitarias que inspiran a actuar por el planeta.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Tercer slide: Nuestros valores -->
+        <div class="carousel-item">
+            <img src="img/eco2.png" class="d-block w-100" alt="Valores EcoHorizonte">
+            <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>Compromiso verde</h1>
+                    <p>Nuestros pilares son la solidaridad, el respeto por la naturaleza y la participación ciudadana. Creemos en el poder colectivo para transformar el mundo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+    
+
+      <!-- About Start -->
+      <div class="container-fluid py-5 about bg-light">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="video border">
+                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/0VQ08_u3in8" data-bs-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Quiénes Somos</h4>
+                <h1 class="text-dark mb-4 display-5">Educación y Acción Ambiental para un Mundo Mejor</h1>
+                <p class="text-dark mb-4">
+                    En <strong>EcoHorizonte</strong>, somos una organización sin fines de lucro dedicada a promover la conciencia ecológica y la educación ambiental en comunidades de todas las edades. Nuestra misión es empoderar a las personas a través del conocimiento, fomentando hábitos sostenibles que impacten positivamente en nuestro entorno natural. Creemos que un planeta más sano comienza con la educación, la participación y el respeto por la naturaleza.
+                </p>
+                <div class="row mb-4">
+                    <div class="col-lg-6">
+                        <h6 class="mb-3"><i class="fas fa-leaf me-2"></i>Programas de Educación Ambiental</h6>
+                        <h6 class="mb-3"><i class="fas fa-chalkboard-teacher me-2 text-primary"></i>Talleres para Escuelas y Comunidades</h6>
+                        <h6 class="mb-3"><i class="fas fa-users me-2 text-secondary"></i>Participación Comunitaria Activa</h6>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6 class="mb-3"><i class="fas fa-recycle me-2"></i>Proyectos de Reciclaje y Reforestación</h6>
+                        <h6 class="mb-3"><i class="fas fa-globe-americas me-2 text-primary"></i>Alianzas por el Desarrollo Sostenible</h6>
+                        <h6><i class="fas fa-heart me-2 text-secondary"></i>Compromiso con el Bienestar del Planeta</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+   <!--nuevos valores-->
+   
+   <!-- Programs Start -->
+   
+   <!-- Programs Start -->
+<div class="container-fluid program py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+            <h4 class="text-pink mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Conócenos</h4>
+            <h1 class="mb-5 display-3">Conoce nuestra misión, visión y valores, pilares que guían cada paso en nuestra labor por un planeta más sostenible.</h1>
+        </div>
+
+        <div class="row">
+
+            <!-- Misión -->
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.2s">
+                <div class="program-item rounded">
+                    <div class="program-img position-relative">
+                        <div class="overflow-hidden img-border-radius">
+                            <img src="img/mi1.png" class="img-fluid w-100" alt="Misión EcoHorizonte">
+                        </div>
+                        <div class="px-4 py-2 bg-primary text-white program-rate">Misión</div>
+                    </div>
+                    <div class="program-text bg-white px-4 pb-3">
+                        <div class="program-text-inner">
+                            <a href="#" class="h4">Nuestro Propósito</a>
+                            <p class="mt-3 mb-0 fs-5">Fomentar la educación ambiental y el desarrollo sostenible mediante proyectos participativos que inspiren a las personas a cuidar el entorno y transformar sus comunidades.</p>
+                        </div>
+                    </div>
+                    <div class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
+                        <img src="img/mi1.png" class="img-fluid rounded-circle p-2 border border-primary bg-white" alt="Equipo EcoHorizonte">
+                        <div class="ms-3">
+                            <h6 class="mb-0 text-primary">Equipo EcoHorizonte</h6>
+                            <small>Educadores y Activistas</small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
+                        <small class="text-white"><i class="fas fa-leaf me-1"></i> Acción Ambiental</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visión -->
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="program-item rounded">
+                    <div class="program-img position-relative">
+                        <div class="overflow-hidden img-border-radius">
+                            <img src="img/vi2.png" class="img-fluid w-100" alt="Visión EcoHorizonte">
+                        </div>
+                        <div class="px-4 py-2 bg-primary text-white program-rate">Visión</div>
+                    </div>
+                    <div class="program-text bg-white px-4 pb-3">
+                        <div class="program-text-inner">
+                            <a href="#" class="h4">Miramos al Futuro</a>
+                            <p class="mt-3 mb-0 fs-5">Ser una organización líder en educación y acción ambiental en América Latina, generando impacto real a través de alianzas, innovación pedagógica y participación comunitaria.</p>
+                        </div>
+                    </div>
+                    <div class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
+                        <img src="img/vi2.png" class="img-fluid rounded-circle p-2 border border-primary bg-white" alt="Visión EcoHorizonte">
+                        <div class="ms-3">
+                            <h6 class="mb-0 text-primary">Red de Voluntarios</h6>
+                            <small>Promotores del Cambio</small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
+                        <small class="text-white"><i class="fas fa-globe-americas me-1"></i> Sostenibilidad Global</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.6s">
+                <div class="program-item rounded">
+                    <div class="program-img position-relative">
+                        <div class="overflow-hidden img-border-radius">
+                            <img src="img/va3.png" class="img-fluid w-100" alt="Valores EcoHorizonte">
+                        </div>
+                        <div class="px-4 py-2 bg-primary text-white program-rate">Valores</div>
+                    </div>
+                    <div class="program-text bg-white px-4 pb-3">
+                        <div class="program-text-inner">
+                            <a href="#" class="h4">Lo que nos mueve</a>
+                            <p class="mt-3 mb-0 fs-5">Actuamos con responsabilidad, respeto por la vida, inclusión, compromiso social y pasión por el planeta, fomentando una cultura de paz y armonía con la naturaleza.</p>
+                        </div>
+                    </div>
+                    <div class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
+                        <img src="img/va3.png" class="img-fluid rounded-circle p-2 border border-primary bg-white" alt="Valores EcoHorizonte">
+                        <div class="ms-3">
+                            <h6 class="mb-0 text-primary">Núcleo Fundador</h6>
+                            <small>Vocación Ambiental</small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
+                        <small class="text-white"><i class="fas fa-hand-holding-heart me-1"></i> Ética Ambiental</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Programs End -->
+
+<!--Especialidades-->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<section class="pagina-servicios">
+  <section class="servicios-container">
+    <div class="experiencia-box">
+      <h1>Áreas de<br>Acción</h1>
+    </div>
+
+    <div class="servicios-contenido">
+      <h4 class="text-pink mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Qué hacemos</h4>
+      <h1 class="titulo-principal">Conoce nuestras iniciativas</h1>
+
+      <div class="tarjetas-servicio">
+        <div class="tarjetas-scroll-wrapper">
+          <div class="tarjetas-servicio scroll-horizontal">
+
+            <!-- Educación Ambiental -->
+            <div class="tarjeta">
+              <div class="icono-servicio">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <h4>Educación Ambiental</h4>
+              <p>Promovemos el conocimiento y el respeto por la naturaleza mediante talleres, charlas y campañas escolares.</p>
+              <ul>
+                <li><i class="fa fa-check text-success"></i> Talleres en escuelas</li>
+                <li><i class="fa fa-check text-success"></i> Programas de reciclaje</li>
+                <li><i class="fa fa-check text-success"></i> Huertos educativos</li>
+                <li><i class="fa fa-check text-success"></i> Formación docente</li>
+              </ul>
+              <a href="#" class="btn-leer-mas" onclick="openModal('modal1')">Detalle <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Modal para Educación Ambiental -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <div class="modal-header">
+                  <h2>Educación Ambiental</h2>
+                </div>
+                <div class="modal-body">
+                  <h3>Descripción de la iniciativa</h3>
+                  <p>En EcoHorizonte creemos que la transformación ambiental comienza en el aula. Por eso desarrollamos contenidos y actividades que forman a las nuevas generaciones con valores sostenibles y conocimientos prácticos sobre el cuidado del entorno.</p>
+                  <img src="img/car1.png" alt="Educación Ambiental">
+                  <br><br>
+                  <h3>Impactos clave</h3>
+                  <ul>
+                    <li><b>Conciencia ecológica desde pequeños:</b> Enseñamos a cuidar el planeta con responsabilidad.</li>
+                    <li><b>Herramientas para educadores:</b> Apoyamos a docentes con recursos ambientales.</li>
+                    <li><b>Proyectos escolares replicables:</b> Facilitamos la creación de huertos y reciclaje en comunidad.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Restauración de Ecosistemas -->
+            <div class="tarjeta">
+              <div class="icono-servicio"><i class="fa fa-tree"></i></div>
+              <h4>Restauración de Ecosistemas</h4>
+              <p>Reforestamos zonas degradadas y restauramos la biodiversidad con apoyo comunitario.</p>
+              <ul>
+                <li><i class="fa fa-check text-success"></i> Jornadas de reforestación</li>
+                <li><i class="fa fa-check text-success"></i> Monitoreo ambiental</li>
+                <li><i class="fa fa-check text-success"></i> Viveros comunitarios</li>
+                <li><i class="fa fa-check text-success"></i> Protección de cuencas</li>
+              </ul>
+              <a href="#" class="btn-leer-mas" onclick="openModal('modal2')">Detalle <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Modal para Restauración -->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <div class="modal-header">
+                  <h2>Restauración de Ecosistemas</h2>
+                </div>
+                <div class="modal-body">
+                  <h3>Descripción de la iniciativa</h3>
+                  <p>Fomentamos la recuperación de espacios naturales mediante la plantación de especies nativas, la creación de viveros y la participación activa de comunidades locales. Nuestro enfoque integra la ciencia ecológica con la acción ciudadana.</p>
+                  <img src="img/car2.png" alt="Restauración de Ecosistemas">
+                  <br><br>
+                  <h3>Impactos clave</h3>
+                  <ul>
+                    <li><b>Mejoramiento de hábitats:</b> Fomentamos la biodiversidad local.</li>
+                    <li><b>Participación comunitaria:</b> Cada árbol plantado es un paso hacia el cambio colectivo.</li>
+                    <li><b>Soluciones sostenibles:</b> Trabajamos por el equilibrio ecológico a largo plazo.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Educación Digital Inclusiva -->
+            <div class="tarjeta">
+            <div class="icono-servicio"><i class="fa fa-laptop"></i></div>
+            <h4>Educación Digital</h4>
+            <p>Reducimos la brecha digital con formación en tecnología y acceso equitativo al conocimiento.</p>
+            <ul>
+                <li><i class="fa fa-check text-success"></i> Alfabetización digital</li>
+                <li><i class="fa fa-check text-success"></i> Cursos gratuitos</li>
+                <li><i class="fa fa-check text-success"></i> Equipamiento a centros educativos</li>
+                <li><i class="fa fa-check text-success"></i> Plataformas inclusivas</li>
+            </ul>
+            <a href="#" class="btn-leer-mas" onclick="openModal('modal3')">Detalle <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Modal Educación Digital -->
+            <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <div class="modal-header">
+                <h2>Educación Digital Inclusiva</h2>
+                </div>
+                <div class="modal-body">
+                <h3>Descripción de la iniciativa</h3>
+                <p>Impulsamos la inclusión tecnológica como herramienta para el desarrollo. A través de talleres prácticos, acceso a computadoras y contenidos en línea adaptados, garantizamos que nadie quede atrás en la era digital.</p>
+                <img src="img/car3.png" alt="Educación Digital Inclusiva">
+                <br><br>
+                <h3>Impactos clave</h3>
+                <ul>
+                    <li><b>Equidad educativa:</b> La tecnología al alcance de todos y todas.</li>
+                    <li><b>Fortalecimiento de capacidades:</b> Cursos de ofimática, internet seguro y más.</li>
+                    <li><b>Inclusión rural:</b> Llevamos conectividad y saberes a zonas alejadas.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+            <!-- Conservación del Agua -->
+            <div class="tarjeta">
+            <div class="icono-servicio"><i class="fa fa-tint"></i></div>
+            <h4>Conservación del Agua</h4>
+            <p>Educamos sobre el uso responsable del agua y promovemos soluciones sostenibles para su conservación.</p>
+            <ul>
+                <li><i class="fa fa-check text-success"></i> Campañas de concientización</li>
+                <li><i class="fa fa-check text-success"></i> Captación de agua de lluvia</li>
+                <li><i class="fa fa-check text-success"></i> Monitoreo de fuentes</li>
+                <li><i class="fa fa-check text-success"></i> Educación hídrica escolar</li>
+            </ul>
+            <a href="#" class="btn-leer-mas" onclick="openModal('modal4')">Detalle <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Modal Conservación Agua -->
+            <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <div class="modal-header">
+                <h2>Conservación del Agua</h2>
+                </div>
+                <div class="modal-body">
+                <h3>Descripción de la iniciativa</h3>
+                <p>El agua es vida. Nuestra ONG promueve una cultura de ahorro, respeto y cuidado de este recurso vital, a través de proyectos comunitarios, talleres, e instalación de sistemas de aprovechamiento del agua.</p>
+                <img src="img/car4.png" alt="Conservación del Agua">
+                <br><br>
+                <h3>Impactos clave</h3>
+                <ul>
+                    <li><b>Reducción del desperdicio:</b> Técnicas caseras y comunitarias.</li>
+                    <li><b>Sistemas sostenibles:</b> Captación, almacenamiento y uso eficiente.</li>
+                    <li><b>Educación transformadora:</b> Desde las aulas hasta los hogares.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+                
+    
+                <!-- Voluntariado Juvenil -->
+            <div class="tarjeta">
+            <div class="icono-servicio"><i class="fa fa-users"></i></div>
+            <h4>Voluntariado Juvenil</h4>
+            <p>Formamos líderes jóvenes comprometidos con el cambio social y ambiental en sus comunidades.</p>
+            <ul>
+                <li><i class="fa fa-check text-success"></i> Escuelas de liderazgo</li>
+                <li><i class="fa fa-check text-success"></i> Acciones solidarias</li>
+                <li><i class="fa fa-check text-success"></i> Proyectos estudiantiles</li>
+                <li><i class="fa fa-check text-success"></i> Campañas juveniles</li>
+            </ul>
+            <a href="#" class="btn-leer-mas" onclick="openModal('modal5')">Detalle <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Modal Voluntariado -->
+            <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <div class="modal-header">
+                <h2>Voluntariado Juvenil</h2>
+                </div>
+                <div class="modal-body">
+                <h3>Descripción de la iniciativa</h3>
+                <p>Creemos en el poder transformador de la juventud. Facilitamos espacios donde los y las jóvenes lideran proyectos que impactan positivamente en su entorno, desarrollando habilidades para la vida y fomentando el sentido de pertenencia comunitaria.</p>
+                <img src="img/car5.png" alt="Voluntariado Juvenil">
+                <br><br>
+                <h3>Impactos clave</h3>
+                <ul>
+                    <li><b>Formación en valores:</b> Empatía, liderazgo y compromiso social.</li>
+                    <li><b>Acción local:</b> Cada joven es un agente de cambio en su barrio.</li>
+                    <li><b>Redes juveniles:</b> Conexión entre voluntarios de distintas regiones.</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+    
+            </div>
+        </div>
+    </div>
+    
+          <!-- Puntos de navegación -->
+          <div class="scroll-dots">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<!--fin especialidades-->
+
+<!-- miembros -->
+
+<!-- Team Start -->
+<!-- Team Start -->
+<div class="container-fluid team py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-pink mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Nuestro equipo</h4>
+            <h1 class="display-4 mb-4">Conoce al Equipo que Impulsa el Cambio</h1>
+            <p class="mb-0">Contamos con un equipo multidisciplinario comprometido con la educación ambiental, la sostenibilidad y el desarrollo comunitario. Cada miembro aporta su experiencia para construir un futuro más justo y respetuoso con el planeta.</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Columna 1 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/co1.png" class="img-fluid rounded-top w-100" alt="Abogado 1">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">David García</h4>
+                        <p class="mb-0">Abogado Corporativo</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/la1.png" class="img-fluid rounded-top w-100" alt="Abogada 2">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Sarah Pérez</h4>
+                        <p class="mb-0">Educadora Ambiental</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/co2.png" class="img-fluid rounded-top w-100" alt="Abogado 3">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Carlos Ruiz</h4>
+                        <p class="mb-0">Gestora de Voluntariado</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 4 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/la2.png" class="img-fluid rounded-top w-100" alt="Abogada 4">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Isabel García</h4>
+                        <p class="mb-0">Encargada de Alianzas y Relaciones Institucionales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Segunda fila (más tarjetas) -->
+        <div class="row g-4">
+            <!-- Columna 5 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/co3.png" class="img-fluid rounded-top w-100" alt="Abogado 5">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Juan Pérez</h4>
+                        <p class="mb-0">Coordinador de Proyectos Comunitarios</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 6 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/la3.png" class="img-fluid rounded-top w-100" alt="Abogada 6">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Laura Martínez</h4>
+                        <p class="mb-0">Artista y Educador/a en Ecoarte</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 7 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/la4.png" class="img-fluid rounded-top w-100" alt="Abogada 7">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Cristina Gómez</h4>
+                        <p class="mb-0">Educador/a Ambiental</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 8 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/co4.png" class="img-fluid rounded-top w-100" alt="Abogada 8">
+                        <div class="team-icon">
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-title p-4">
+                        <h4 class="mb-0">Daniel Torres</h4>
+                        <p class="mb-0">Responsable de Reciclaje</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Miembros End -->
+
+<!--footer-->
+
+
+<div class="container">
+    <div class="cta-section row align-items-center">
+        <div class="col-md-8 cta-text">
+          <h2>¿Quieres ser parte del cambio?</h2>
+          <p>Descubre cómo puedes participar en nuestros programas educativos y ambientales</p>
+        </div>
+        <div class="col-md-4 cta-button">
+          <a href="#" class="btn btn-dark">Servicios</a>
+        </div>
+      </div>      
+  </div>
+  
+  <!-- Footer -->
+  
+  <footer class="footer-main text-center text-lg-start">
+  <div class="container text-md-start mt-5">
+    <div class="row mt-3">
+      <!-- Información de la ONG -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="text-uppercase">EcoHorizonte</h5>
+        <p>Educación ambiental y acción comunitaria para un futuro sostenible.</p>
+        <p>© 2025 EcoHorizonte. Todos los derechos reservados.</p>
+      </div>
+
+      <!-- Programas -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h5 class="text-uppercase">Programas</h5>
+        <a href="#">Educación Ambiental</a>
+        <a href="#">Reforestación</a>
+        <a href="#">Talleres Comunitarios</a>
+        <a href="#">Voluntariado</a>
+      </div>
+
+  
+        <!-- Empresa -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h5 class="text-uppercase">Nosotros</h5>
+          <a href="#">Quiénes somos</a>
+          <a href="#">Misión y Visión</a>
+          <a href="#">Nuestro Equipo</a>
+          <a href="#">Testimonios</a>
+        </div>
+  
+        <!-- Información Legal -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h5 class="text-uppercase">Información Legal</h5>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+  
+        <!-- Redes sociales -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase">Síguenos</h5>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Footer End -->
+  
+
+<!--fin de la pagina valores--> 
+ <!-- Bootstrap JS Bundle (para que funcione el carrusel) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ <script src="nosotros.js"></script>
+
+<!--terminó del carrusel-->   
+
+</body>
+</html>
+
+
+   
