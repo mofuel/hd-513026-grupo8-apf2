@@ -1,0 +1,153 @@
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding-top: var(--space-xl);
+    padding-bottom: 50px;
+    margin-top: -20px;
+    position: relative !important;
+    z-index: 1000 !important;
+    pointer-events: auto !important;
+
+}
+
+.footer h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.336);
+    color: var(--text-white);
+    font-size: 1.75rem;
+    margin-bottom: var(--space-md);
+}
+
+.footer h3 span {
+    color: var(--light-accent); /* Usar light-accent para el acento del footer */
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.486);
+    font-family: 'Permanent Marker', cursive;
+}
+
+.footer h4 {
+    color: var(--text-white);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-md);
+    position: relative;
+    padding-bottom: var(--space-xs);
+}
+
+.footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--light-accent); /* Usar light-accent para la línea */
+}
+
+.social-links {
+    display: flex;
+    margin-top: var(--space-md);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: var(--space-sm);
+    color: var(--text-white);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-xs);
+}
+
+.footer-links a {
+    color: var(--text-white);
+    transition: var(--transition);
+    display: inline-block;
+    padding: 2px 0;
+    text-decoration: none; /* Quitamos el subrayado por defecto */
+}
+
+.footer-links a:hover {
+    font-weight: bold;
+    color: var(--accent-color);
+    transform: translateX(5px);
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.5); /* Sombra sutil al hacer hover */
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+    color: var(--text-white);
+}
+
+.footer-contact p i {
+    color: var(--text-white);
+    margin-right: var(--space-xs);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--space-md) 0;
+    margin-top: var(--space-xl);
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* BOTÓN "VOLVER ARRIBA" (BACK TO TOP) - Manteniendo tus estilos */
+/* (Estos estilos son compartidos, deberían estar en _footer.css o similar,
+   pero los mantengo aquí si tu estructura los requiere en servicios.css) */
+/* ========================================= */
+/* SI YA TIENES ESTOS ESTILOS EN _footer.css, PUEDES ELIMINARLOS DE AQUÍ */
+.back-to-top {
+    z-index: 1100 !important;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow-light);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-dark);
+    color: var(--text-white);
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-medium);
+}

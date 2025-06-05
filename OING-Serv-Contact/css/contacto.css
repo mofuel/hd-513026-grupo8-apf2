@@ -1,0 +1,380 @@
+:root {
+    /* Variables de Colores Ambientales (tu paleta) */
+    --color-verde-claro: #A8E6CF; /* Verde menta, suave y fresco */
+    --color-verde-medio: #39aa9d; /* Verde agua, un poco más oscuro */
+    --color-verde-oscuro: #40b0c4; /* Verde bosque, para contrastes */
+    --color-azul-claro: #277daf; /* Azul cielo suave */
+    --color-azul-medio: #40b0c4; /* Azul cerúleo, vibrante */
+    --color-cian-claro: #2fa7b9; /* Cian muy claro, casi blanco-azulado */
+    --color-fondo-claro: #F8F8F8; /* Gris muy claro, casi blanco */
+    --color-texto-principal: #000000; /* Gris oscuro para texto */
+    --color-texto-secundario: #000000; /* Gris medio para descripciones */
+    --light-text-color: #ffffff; /* Para texto sobre fondos oscuros */
+
+    /* Mapeo de Variables de Color Originales a la Paleta Ambiental */
+    --primary-color: #a8c916; /* O tu color primario */
+    --primary-dark: #538821; /* Una versión más oscura de tu color primario */
+    --secondary-color: var(--color-verde-medio); /* #64B6AC */
+    --accent-color: var(--color-azul-medio); /* #8AC6D1 */
+    --light-accent: var(--color-cian-claro); /* #C3F0F7 */
+    --text-color: var(--color-texto-principal);
+    --text-light: var(--color-texto-secundario);
+    --text-white: var(--light-text-color); /* Blanco */
+    --bg-light: #e0f9ffb2;
+    --bg-dark: var(--color-verde-oscuro); /* Usar el verde oscuro para fondos oscuros */
+
+    /* Font variables */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+
+    /* Spacing variables (8px spacing system) */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+    --space-xxl: 4rem; /* 64px, para espaciado extra */
+
+
+    /* Other variables */
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+
+    /* Nuevas variables para colores del footer que no están definidos arriba */
+    --blanco: #ffffff;
+    --borde: #dee2e6; /* Un gris claro para bordes */
+    --gris-claro: #f8f9fa; /* Otro gris muy claro para fondos */
+    --gris-texto: #343a40; /* Un gris oscuro para texto general */
+}
+
+/* Fondo general */
+body {
+    background-color: var(--gris-claro);
+    font-family: var(--body-font); /* Usar variable de fuente del body */
+    color: var(--gris-texto);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font); /* Usar variable de fuente para headings */
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.6; /* Aumenta el interlineado para mejor legibilidad */
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* --- HERO SECTION CONTACTO --- */
+.hero-contacto {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/img/ambiente9.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    color: var(--light-text-color);
+    margin-top: 56px; /* Asegura que no se solape con el navbar */
+    display: flex; /* Centrar contenido verticalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+.hero-contacto h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--light-text-color);
+}
+
+.hero-contacto p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--light-text-color);
+    max-width: 800px; /* Limita el ancho del párrafo para mejor lectura */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- SECCIÓN DE CONTACTO GENERAL --- */
+.contact-section {
+    padding: var(--space-xl) 0; /* Aumenta el padding vertical de la sección */
+    background-color: var(--color-fondo-claro);
+}
+
+/* Ajustes para los títulos y descripciones generales de la sección */
+.contact-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md); /* Espacio debajo del título */
+    color: var(--primary-color);
+}
+
+.contact-section .section-description {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-lg); /* Más espacio debajo de la descripción */
+    color: var(--color-texto-secundario);
+    max-width: 100%; /* Asegura que no haya un max-width que lo comprima en columna */
+}
+
+/* Contenedor de las dos columnas */
+.contact-section .row {
+    align-items: flex-start; /* Alinea los elementos al inicio de sus contenedores */
+}
+
+/* Columna de Envíanos un Mensaje (el formulario) */
+.col-md-6.order-md-2 {
+    /* El orden 'order-md-2' hace que esta columna se muestre a la DERECHA en MD y mayores */
+    padding: var(--space-lg); /* Más padding interno para el formulario */
+    background-color: var(--light-text-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    /* Asegurarse de que el título y la descripción dentro de esta columna estén alineados a la izquierda */
+    text-align: left;
+}
+.col-md-6.order-md-2 .section-title,
+.col-md-6.order-md-2 .section-description {
+    text-align: left; /* Alinea el título y descripción del formulario a la izquierda */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Columna de Información de Contacto */
+.col-md-6.order-md-1 {
+    /* El orden 'order-md-1' hace que esta columna se muestre a la IZQUIERDA en MD y mayores */
+    padding: var(--space-lg); /* Añadir padding a toda la columna para separarla de los bordes del contenedor principal */
+    background-color: var(--light-text-color); /* Fondo blanco como en el formulario */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    box-shadow: var(--box-shadow); /* Sombra como en el formulario */
+    /* Asegurarse de que el título y la descripción dentro de esta columna estén alineados a la izquierda */
+    text-align: left;
+}
+
+.col-md-6.order-md-1 .section-title,
+.col-md-6.order-md-1 .section-description {
+    text-align: left; /* Alinea el título y descripción de info a la izquierda */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.form-label {
+    font-weight: 500;
+    color: var(--color-texto-principal);
+    margin-bottom: var(--space-xs); /* Pequeño espacio debajo de la etiqueta */
+    display: block; /* Asegura que la etiqueta tome su propia línea */
+}
+
+.form-control {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-verde-claro);
+    padding: 0.75rem 1rem; /* Aumenta el padding de los inputs */
+    font-size: 1rem;
+    transition: var(--transition);
+    height: auto; /* Asegura que el alto no sea fijo */
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(41, 142, 128, 0.25); /* Reemplaza con rgba de secondary-color */
+    outline: none;
+}
+
+.mb-3 { /* Este es un margen de Bootstrap, lo respetamos */
+    margin-bottom: var(--space-md) !important; /* Asegura que el margen sea consistente */
+}
+
+textarea.form-control {
+    min-height: 120px; /* Establece una altura mínima para el textarea */
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: var(--space-sm) var(--space-lg); /* Padding para el botón */
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    margin-top: var(--space-md); /* Espacio arriba del botón */
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    color: var(--light-text-color);
+}
+
+/* Estilos de Información de Contacto */
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--space-md); /* Más espacio entre cada elemento de información */
+    padding-bottom: var(--space-sm); /* Un poco de padding abajo para la línea si la hubiera */
+    border-bottom: 1px solid var(--color-fondo-claro); /* Una línea sutil para separar, como en la imagen */
+}
+
+.info-item:last-child {
+    margin-bottom: 0; /* Eliminar margen inferior del último elemento */
+    border-bottom: none; /* Quitar borde del último elemento */
+}
+
+
+.info-item .icon {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-right: var(--space-md); /* Más espacio entre el icono y el texto */
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px; /* Ajuste para alinear con el texto si es necesario */
+}
+
+.info-item h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs); /* Espacio debajo del título del item */
+    color: var(--color-texto-principal);
+    line-height: 1.3; /* Ajustar interlineado para los títulos */
+}
+
+.info-item p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.5; /* Ajustar interlineado para los párrafos de los items */
+}
+
+/* --- MAPA --- */
+.map-section {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    background-color: var(--color-fondo-claro);
+}
+
+.map-section .section-title,
+.map-section .section-description {
+    text-align: center; /* Asegura que el título y descripción del mapa estén centrados */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    height: 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) { /* A partir de pantallas MD y superiores */
+    .contact-section .col-md-6.order-md-2 {
+        order: 2; /* Formulario a la derecha */
+    }
+    .contact-section .col-md-6.order-md-1 {
+        order: 1; /* Información a la izquierda */
+    }
+}
+
+@media (max-width: 992px) { /* Para tablets y pantallas un poco más grandes */
+    .col-md-6.order-md-1,
+    .col-md-6.order-md-2 {
+        padding: var(--space-md); /* Reducir un poco el padding en las columnas */
+    }
+}
+
+@media (max-width: 767.98px) { /* Para móviles pequeños y medianos, se apilarán */
+    .hero-contacto h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-contacto p {
+        font-size: 1rem;
+    }
+
+    .contact-section .section-title,
+    .contact-section .section-description {
+        text-align: center; /* Centrar títulos y descripciones generales en móviles */
+    }
+
+    .col-md-6.order-md-1,
+    .col-md-6.order-md-2 {
+        /* En pantallas pequeñas, se apilarán por defecto.
+           El `order` ya no aplica para `md` en adelante,
+           y por defecto en `xs`/`sm` no tienen `order` establecido en el HTML.
+           Aquí solo ajustamos padding y margen entre ellos si se apilan. */
+        padding: var(--space-md); /* Ajustar el padding */
+        margin-bottom: var(--space-lg); /* Espacio entre las dos columnas en móviles */
+    }
+    .col-md-6.order-md-2:last-child { /* Asegura que el último elemento apilado no tenga margen inferior excesivo */
+        margin-bottom: 0;
+    }
+
+
+    .info-item .icon {
+        font-size: 1.8rem;
+        margin-right: 15px;
+    }
+
+    /* Asegura que los títulos y descripciones dentro de las columnas también se centren */
+    .col-md-6.order-md-1 .section-title,
+    .col-md-6.order-md-1 .section-description,
+    .col-md-6.order-md-2 .section-title,
+    .col-md-6.order-md-2 .section-description {
+        text-align: center;
+    }
+    .col-md-6.order-md-2 .text-center { /* El botón de enviar mensaje */
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-contacto {
+        height: 300px;
+    }
+
+    .hero-contacto h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 0.95rem;
+    }
+
+    .btn-submit {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Footer */
+footer {
+  background-color: var(--blanco);
+  border-top: 1px solid var(--borde);
+  margin-top: 2rem;
+}
+

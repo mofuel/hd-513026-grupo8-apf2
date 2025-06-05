@@ -1,0 +1,403 @@
+:root {
+    /* Variables de Colores Ambientales (tu paleta) */
+    --color-verde-claro: #A8E6CF; /* Verde menta, suave y fresco */
+    --color-verde-medio: #39aa9d; /* Verde agua, un poco más oscuro */
+    --color-verde-oscuro: #90ce00; /* Verde bosque, un poco más vibrante */
+    --color-azul-claro: #2dabc2; /* Azul cielo suave */
+    --color-azul-medio: #40b0c4; /* Azul cerúleo, vibrante */
+    --color-cian-claro: #C3F0F7; /* Cian muy claro, casi blanco-azulado */
+    --color-fondo-claro: #F8F8F8; /* Gris muy claro, casi blanco */
+    --color-texto-principal: #333333; /* Gris oscuro para texto */
+    --color-texto-secundario: #666666; /* Gris medio para descripciones */
+    --light-text-color: #ffffff; /* Para texto sobre fondos oscuros */
+
+    /* Mapeo de Variables de Color Originales a la Paleta Ambiental (AJUSTADO) */
+    --primary-color: #a8c916; /* Tu color primario - Ajustado para ser más vibrante */
+    --primary-dark: #60b115; /* Una versión más oscura de tu color primario */
+    --secondary-color: #40b0c4;
+    --accent-color: #40b0c4; /* Azul cerúleo, vibrante y fresco */
+    --light-accent: var(--color-azul-claro);
+    --text-color: var(--color-texto-principal);
+    --text-light: var(--color-texto-secundario);
+    --text-white: var(--light-text-color); /* Blanco */
+    --bg-light: #ecfbff73;
+    --bg-dark: var(--color-verde-oscuro);
+
+    /* NUEVA VARIABLE PARA COLORES AMBIENTALES EN TEXTOS */
+    --verde-ambiental: var(--primary-dark); /* Un verde oscuro fuerte para títulos */
+
+
+    /* Font variables */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+
+    /* Spacing variables (8px spacing system) */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+
+    /* Other variables */
+    --border-radius: 12px; /* Aumentado para un look más suave */
+    --box-shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08); /* Sombra ligera */
+    --box-shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra media para hover */
+    --transition: all 0.4s ease; /* Transiciones más suaves */
+}
+
+/* Estilos Generales para la Página de Servicios */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--color-fondo-claro);
+}
+
+h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--verde-ambiental);
+}
+
+/* Títulos de Sección */
+.services-slider-section h2,
+.projects-section h2,
+.approach-section h2,
+.cta-services-section h2 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.services-slider-section h2::after,
+.projects-section h2::after,
+.approach-section h2::after,
+.cta-services-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+/* Sección del Carrusel de Servicios */
+.services-slider-section {
+    padding-top: 100px !important;
+    background-color: var(--bg-light);
+}
+
+.services-slider {
+    padding: var(--space-md) 0;
+}
+
+.service-card {
+    background: var(--light-text-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+    padding: var(--space-md);
+    text-align: center;
+    transition: all 0.3s ease-in-out !important; /* RESTAURADO: ease-in-out !important */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--space-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon i {
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 15px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-light);
+}
+
+.service-title {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.service-description {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    flex-grow: 1;
+}
+
+.service-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: var(--transition); /* Usar la variable general, si necesitas `!important` aquí, sería 'all 0.3s ease-in-out !important;' */
+    font-weight: 500;
+}
+
+.service-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    transform: translateY(-2px);
+}
+
+/* Navegación y Paginación de Swiper */
+.services-slider .swiper-pagination {
+    margin-top: var(--space-md);
+}
+
+.services-slider .swiper-pagination-bullet {
+    background: var(--color-texto-secundario);
+    opacity: 0.8;
+}
+
+.services-slider .swiper-pagination-bullet-active {
+    background: var(--primary-color);
+    opacity: 1;
+}
+
+/* Sección de Proyectos */
+.projects-section {
+    padding-top: 50px;
+    background-color: var(--light-text-color);
+}
+
+.projects-section h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: var(--space-sm);
+}
+
+.projects-section .lead {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+.projects-section p.mb-5 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    border: none;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    background-color: var(--bg-light);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.project-card img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.project-card .card-body {
+    padding: var(--space-md);
+}
+
+.project-card .card-title {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+}
+
+.project-card .card-text {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Sección de Enfoque Sostenible */
+.approach-section {
+    background-color: var(--color-cian-claro);
+    padding: 80px 0;
+}
+
+.approach-item {
+    background: var(--light-text-color);
+    border-radius: var(--border-radius);
+    padding: var(--space-md);
+    box-shadow: var(--box-shadow-light);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.approach-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.approach-icon {
+    font-size: 3.8rem;
+    color: var(--primary-dark);
+    margin-bottom: var(--space-md);
+}
+
+.approach-title {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+}
+
+.approach-item p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Sección de Llamada a la Acción */
+.cta-services-section {
+    background-color: var(--accent-color);
+    /* background-image: url('../img/cta-background.jpg'); */
+    background-position: center;
+    color: black;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(212, 248, 255);
+    z-index: -1;
+}
+
+
+.cta-services-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+
+.cta-services-section p {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.cta-services-section .btn-light {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-white);
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out !important; /* RESTAURADO: ease-in-out !important */
+}
+
+.cta-services-section .btn-light:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+/* Animaciones (de animate.css) */
+.animate__animated[data-animation] {
+    opacity: 0;
+    
+    visibility: hidden;
+}
+
+.animate__animated.animate__active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 991.98px) {
+    .service-card, .project-card, .approach-item {
+        margin-bottom: var(--space-md);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .services-slider-section h2,
+    .projects-section h2,
+    .approach-section h2,
+    .cta-services-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-services-section p {
+        font-size: 1rem;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .services-slider-section h2,
+    .projects-section h2,
+    .approach-section h2,
+    .cta-services-section h2 {
+        font-size: 1.8rem;
+    }
+    .service-icon {
+        font-size: 3rem;
+    }
+    .service-icon i {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    }
+    .service-title {
+        font-size: 1.4rem;
+    }
+    .project-card .card-title {
+        font-size: 1.5rem;
+    }
+    .approach-icon {
+        font-size: 3rem;
+    }
+    .approach-title {
+        font-size: 1.6rem;
+    }
+}
