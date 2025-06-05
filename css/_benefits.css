@@ -1,0 +1,33 @@
+/* ========================================= */
+/* SECCIÓN DE BENEFICIOS                     */
+/* ========================================= */
+.benefits-section {
+    padding: var(--space-xl) 0;
+    background-color: white;
+}
+
+.benefit-card {
+    background-color: var(--text-white);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 15px 30px rgba(168, 197, 2, 0.2);
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(2, 143, 185, 0.411);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: var(--space-sm);
+}
+
+.benefit-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+}

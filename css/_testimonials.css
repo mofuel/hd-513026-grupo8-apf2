@@ -1,0 +1,173 @@
+/* ========================================= */
+/* SECCIÓN DE TESTIMONIOS (CON CARRUSEL)   */
+/* ========================================= */
+.testimonials-section {
+    padding: var(--space-xl) 0;
+    background-color: var(--bg-light);
+}
+
+/* Estilos de las tarjetas de testimonio (generales) */
+.testimonial-card {
+    background-color: var(--text-white);
+    border-radius: var(--border-radius);
+    padding: var(--space-lg);
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.testimonial-stars {
+    color: var(--accent-color);
+    margin-bottom: var(--space-sm);
+    font-size: 1.25rem;
+}
+
+.testimonial-content p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: var(--space-md);
+    position: relative;
+    padding: 0 var(--space-sm);
+}
+
+.testimonial-content p::before,
+.testimonial-content p::after {
+    content: '"';
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    color: var(--light-accent);
+    position: absolute;
+}
+
+.testimonial-content p::before {
+    left: -10px;
+    top: -10px;
+}
+
+.testimonial-content p::after {
+    right: -10px;
+    bottom: -10px;
+}
+
+.testimonial-author h4 {
+    margin-bottom: 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.testimonial-author span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Controles generales de testimonios (si no son parte de un carrusel Bootstrap) */
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.testimonial-controls button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    margin: 0 var(--space-xs);
+    opacity: 0.7;
+    transition: var(--transition);
+    border: none;
+}
+
+.testimonial-controls button:hover {
+    opacity: 1;
+    background-color: var(--accent-color);
+}
+
+/* Estilos específicos para el carrusel de testimonios (Bootstrap Carousel) */
+#testimonialCarousel {
+    position: relative;
+}
+
+#testimonialCarousel .testimonial-card {
+    background-color: var(--text-white);
+    border-radius: var(--border-radius);
+    padding: var(--space-lg);
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+#testimonialCarousel .testimonial-content {
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+#testimonialCarousel .testimonial-stars {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#testimonialCarousel .testimonial-content p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+#testimonialCarousel .testimonial-author h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#testimonialCarousel .testimonial-author span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+#testimonialCarousel .testimonial-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+    z-index: 10;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+#testimonialCarousel .carousel-control-prev {
+    left: -40px;
+}
+
+#testimonialCarousel .carousel-control-next {
+    right: -40px;
+}
+
+#testimonialCarousel .carousel-control-prev:hover,
+#testimonialCarousel .carousel-control-next:hover {
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+/* Espacio abajo del carrusel para pantallas grandes (revisar si es necesario) */
+#testimonialCarousel .carousel-inner {
+    margin-bottom: -500px;
+}

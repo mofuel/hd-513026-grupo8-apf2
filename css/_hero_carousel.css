@@ -1,0 +1,120 @@
+/* ========================================= */
+/* HERO CARRUSEL                             */
+/* ========================================= */
+.hero-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /* Las animaciones de slide para Bootstrap se manejan con JavaScript y clases */
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-md);
+    font-family: 'Permanent Marker', cursive; /* Aplica la nueva fuente con una de respaldo */
+    font-weight: 400; /* Permanent Marker es 400 */
+    font-size: 3.8rem; /* Puedes ajustar el tamaño para que se vea bien con esta fuente */
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional: una sombra para que resalte más */
+    color: var(--text-white); /* Asegúrate de que el color sea legible */
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    color: var(--text-white);
+    margin-bottom: var(--space-lg);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: var(--accent-color);
+}
+
+/* ========================================= */
+/* ANIMACIONES DEL CARRUSEL (para texto y botón) */
+/* ========================================= */
+
+/* Estado inicial oculto de los elementos de la leyenda */
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption .btn {
+    opacity: 0;
+    transform: translateY(30px); /* Empiezan ligeramente abajo */
+    transition: none; /* Asegura que no haya transiciones CSS preexistentes */
+}
+
+/* Clases base para la animación */
+.animated {
+    animation-duration: 1s; /* Duración de la animación */
+    animation-fill-mode: both; /* Mantiene el estado final (opacity: 1, transform: 0) */
+}
+
+/* Keyframes para la animación fadeInUp (aparecer desde abajo) */
+@keyframes fadeInUpCustom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Clase que aplica la animación fadeInUpCustom */
+.fadeInUp-active {
+    animation-name: fadeInUpCustom;
+}
+
+/* Retrasos personalizados para los elementos de la leyenda */
+.carousel-caption h1.fadeInUp-active {
+    animation-delay: 0.05s; /* Muy rápido, casi instantáneo */
+}
+
+.carousel-caption p.fadeInUp-active {
+    animation-delay: 0.15s; /* Un poco después del H1 */
+}
+
+.carousel-caption .btn.fadeInUp-active {
+    animation-delay: 0.25s; /* Un poco después del P */
+}
+
+/* Estilos para el botón del carrusel */
+.carousel-caption .btn-primary {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-caption .btn-primary:hover {
+    transform: translateY(-5px) scale(1.02); /* Se alza ligeramente y crece un poco */
+    background-color: var(--primary-dark); /* Color más oscuro al pasar el mouse (si tienes una variable CSS) */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+}

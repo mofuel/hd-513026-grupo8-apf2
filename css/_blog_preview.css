@@ -1,0 +1,68 @@
+/* ========================================= */
+/* SECCIÓN "ÚLTIMAS NOTICIAS Y NOVEDADES"    */
+/* ========================================= */
+.blog-preview-section {
+    padding: var(--space-xl) 0;
+    background-color: var(--text-white); /* Fondo blanco para contrastar */
+}
+
+.blog-preview-card {
+    background-color: rgb(250, 255, 240);
+    border-radius: var(--border-radius);
+    box-shadow: 0 15px 30px rgba(168, 197, 2, 0.2);
+    transition: var(--transition);
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column; /* Para que el contenido fluya verticalmente */
+}
+
+.blog-preview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(2, 143, 185, 0.411);
+}
+
+.blog-preview-card img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.blog-preview-content {
+    padding: var(--space-md);
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-preview-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-color);
+}
+
+.blog-preview-content p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: var(--space-sm);
+    flex-grow: 1; /* Permite que el párrafo crezca si es necesario */
+}
+
+.blog-preview-meta {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: var(--space-sm);
+}
+
+.blog-preview-link {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-top: auto; /* Empuja el enlace al final de la tarjeta */
+    display: inline-block;
+}
+
+.blog-preview-link:hover {
+    color: var(--primary-dark);
+}

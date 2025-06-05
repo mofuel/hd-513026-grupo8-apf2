@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOFUTURO ONG - Un futuro sostenible, juntos.</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/_variables_base.css">
+  <link rel="stylesheet" href="css/_navbar.css">
+  <link rel="stylesheet" href="css/_hero_carousel.css">
+  <link rel="stylesheet" href="css/_benefits.css">
+  <link rel="stylesheet" href="css/_about_us_preview.css">
+  <link rel="stylesheet" href="css/_services.css">
+  <link rel="stylesheet" href="css/_testimonials.css">
+  <link rel="stylesheet" href="css/_blog_preview.css">
+  <link rel="stylesheet" href="css/_footer.css">
+  <link rel="stylesheet" href="css/_media_queries.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href=".">
+          <span class="logo-text">ECOFUTURO <span class="logo-accent">ONG</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/ambiente4.jpg" class="d-block w-100" alt="Naturaleza exuberante">
+          <div class="carousel-caption">
+            <h1>Bienvenidos a
+              <span class="text-primary">ECOFUTURO ONG</span>
+            </h1>
+            <p>Impulsando un
+              futuro sostenible para nuestro planeta</p>
+            <a href="nosotros.html" class="btn btn-primary">Conoce Nuestra Misión</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="d-block w-100" alt="Naturaleza exuberante">
+          <div class="carousel-caption">
+            <h1><span class="text-primary">Protegemos</span> Nuestro Hogar Común</h1>
+            <p>Acciones concretas
+              para un impacto positivo</p>
+            <a href="servicios.html" class="btn btn-primary">Nuestros Proyectos</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/ambiente3.jpg" class="d-block w-100" alt="Ecosistemas saludables">
+          <div class="carousel-caption">
+            <h1>Únete al Cambio
+              por la <span class="text-primary">Naturaleza</span></h1>
+            <p>Tu apoyo hace
+              posible la diferencia</p>
+            <a href="contacto.html" class="btn btn-primary">¡Actúa Ahora!</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="valores" class="benefits-section">
+    <div class="container">
+      <div class="section-header text-center animate__animated" data-animation="animate__fadeInDown">
+        <h2>¿Por qué apoyar a <span class="text-primary">ECOFUTURO ONG</span>?</h2>
+        <p class="lead">Nos dedicamos a la protección y restauración del medio ambiente con pasión y compromiso.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.1s">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-tree"></i>
+            </div>
+            <h3>Impacto Real</h3>
+            <p>Proyectos tangibles que mejoran la calidad del aire, el agua y la biodiversidad.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.3s">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3>Comunidad Global</h3>
+            <p>Somos parte de una red mundial de voluntarios y colaboradores apasionados por la Tierra.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.5s">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <h3>Educación Ambiental</h3>
+            <p>Fomentamos la conciencia ecológica a través de talleres y campañas educativas.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.7s">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="bi bi-heart"></i>
+            </div>
+            <h3>Compromiso Genuino</h3>
+            <p>Nuestra dedicación a la causa ambiental es el motor de cada una de nuestras acciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section about-preview-section" id="about-us-preview">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 text-center">
+          <div class="about-preview-img mb-4 mb-lg-0">
+            <img class="img-fluid" src="/img/trabajo.jpg" alt="Equipo de ECOFUTURO ONG trabajando">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="about-preview-content text-center text-lg-start">
+            <h2 class="section-heading text-uppercase">Sobre <span class="text-primary">ECOFUTURO ONG</span></h2>
+            <h3 class="section-subheading text-muted">Impulsando el cambio por un mañana más verde.</h3>
+            <p>Desde 2010, ECOFUTURO ONG ha estado en la vanguardia de la conservación ambiental y el desarrollo
+              sostenible. Nacimos de la pasión por proteger nuestros ecosistemas y empoderar a las comunidades para que
+              sean agentes de cambio.</p>
+            <p>Nuestro propósito es simple pero poderosa: Proteger y restaurar los ecosistemas naturales mientras se
+              fomenta la educación ambiental y el bienestar comunitario. Creemos en un futuro donde la humanidad y la
+              naturaleza coexistan en armonía.</p>
+            <a class="btn btn-primary btn-lg" href="contacto.html">Únete a Nuestro Propósito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="services-section">
+    <div class="container">
+      <div class="section-header text-center animate__animated" data-animation="animate__fadeInDown">
+        <h2>Nuestros <span class="text-primary">Programas y Proyectos</span></h2>
+        <p class="lead">Impulsamos iniciativas para un futuro más verde y sostenible</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.1s">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-tree"></i>
+            </div>
+            <h3>Reforestación y Conservación</h3>
+            <p>Plantamos árboles y protegemos ecosistemas vitales para la biodiversidad.</p>
+            <a href="servicios.html" class="service-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.3s">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-recycle"></i>
+            </div>
+            <h3>Gestión de Residuos</h3>
+            <p>Fomentamos el reciclaje, la reducción y la reutilización para un planeta más limpio.</p>
+            <a href="servicios.html" class="service-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.5s">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-droplet"></i>
+            </div>
+            <h3>Protección de Recursos Hídricos</h3>
+            <p>Implementamos proyectos para la conservación y uso responsable del agua.</p>
+            <a href="servicios.html" class="service-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.7s">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-book"></i>
+            </div>
+            <h3>Talleres Educativos</h3>
+            <p>Programas interactivos para niños y adultos sobre sostenibilidad y ecología.</p>
+            <a href="servicios.html" class="service-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.9s">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-megaphone"></i>
+            </div>
+            <h3>Campañas de Concienciación</h3>
+            <p>Lanzamos iniciativas para sensibilizar sobre el cambio climático y la conservación.</p>
+            <a href="servicios.html" class="service-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-flower1"></i>
+            </div>
+            <h3>Agricultura Sostenible</h3>
+            <p>Apoyamos prácticas agrícolas que respetan el medio ambiente y la biodiversidad.</p>
+            <a href="servicios.html" class="service-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section blog-preview-section" id="blog-preview">
+    <div class="container">
+      <div class="text-center section-header animate__animated" data-animation="animate__fadeInDown">
+        <h2 class="section-heading text-uppercase">Últimas <span class="text-primary">Noticias y Novedades</span></h2>
+        <h3 class="section-subheading text-muted">Mantente al día con el trabajo y los logros de ECOFUTURO ONG.</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 animate__animated" data-animation="animate__fadeInUp"
+          data-animation-delay="0.1s">
+          <div class="blog-preview-card">
+            <img src="/img/agua.webp" alt="Noticia 1: Día Mundial del Agua">
+            <div class="blog-preview-content">
+              <h3>Celebrando el Día Mundial del Agua con Conciencia</h3>
+              <div class="blog-preview-meta">22 de Marzo, 2025 | Por Equipo ECOFUTURO</div>
+              <p>Nos unimos a la celebración global con actividades de sensibilización y la siembra de árboles en las
+                riberas del río local...</p>
+              <a href="servicios.html" class="blog-preview-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 animate__animated" data-animation="animate__fadeInUp"
+          data-animation-delay="0.3s">
+          <div class="blog-preview-card">
+            <img src="/img/taller2.jpg" alt="Noticia 2: Taller Comunitario">
+            <div class="blog-preview-content">
+              <h3>Taller de Reciclaje y Compostaje en la Comunidad "Esperanza Verde"</h3>
+              <div class="blog-preview-meta">15 de Febrero, 2025 | Por Ana C.</div>
+              <p>Cientos de vecinos participaron en nuestro taller práctico, aprendiendo técnicas para reducir su huella
+                de carbono desde casa...</p>
+              <a href="#contacto" class="blog-preview-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 animate__animated" data-animation="animate__fadeInUp"
+          data-animation-delay="0.5s">
+          <div class="blog-preview-card">
+            <img src="/img/zona.jpeg" alt="Noticia 3: Nueva Zona Protegida">
+            <div class="blog-preview-content">
+              <h3>ECOFUTURO ONG Logra la Declaración de Nueva Zona Protegida</h3>
+              <div class="blog-preview-meta">01 de Enero, 2025 | Por Juan P.</div>
+              <p>Después de años de arduo trabajo y colaboración, una extensión de bosque vital ha sido declarada área
+                de conservación...</p>
+              <a href="#contacto" class="blog-preview-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 animate__animated" data-animation="animate__zoomIn" data-animation-delay="0.7s">
+        <a class="btn btn-primary btn-lg" href="blog.html">Ver Todas las Noticias</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="nuevoTestimonios" class="testimonials-section">
+    <div class="container animate__animated" data-animation="animate__fadeIn">
+      <div class="section-header text-center animate__animated" data-animation="animate__fadeInDown">
+        <h2>Lo que dicen <span class="text-primary">Nuestros Colaboradores</span></h2>
+        <p class="lead">Impacto positivo a través de testimonios</p>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"Colaborar con ECOFUTURO ONG ha sido una experiencia enriquecedora. Su pasión y dedicación
+                  por el planeta son inspiradoras. ¡Un verdadero cambio!"</p>
+                <div class="testimonial-author">
+                  <h4>María Fernanda</h4>
+                  <span>Voluntaria Activa</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>"El trabajo de ECOFUTURO ONG en la reforestación de nuestra comunidad ha sido monumental.
+                  Han transformado áreas desoladas en espacios llenos de vida."</p>
+                <div class="testimonial-author">
+                  <h4>Roberto González</h4>
+                  <span>Líder Comunitario</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p>"Sus talleres de educación ambiental han sido clave para que mis alumnos comprendan la importancia de
+                  cuidar nuestro planeta. ¡Un excelente recurso!"</p>
+                <div class="testimonial-author">
+                  <h4>Laura Pérez</h4>
+                  <span>Profesora de Biología</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <i class="bi bi-arrow-left"></i>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <i class="bi bi-arrow-right"></i>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0 animate__animated" data-animation="animate__fadeInUp"
+          data-animation-delay="0.1s">
+          <div class="footer-info">
+            <h3>ECOFUTURO <span class="logo-accent">ONG</span></h3>
+            <p>Organización sin fines de lucro dedicada a la protección y restauración del medio ambiente para las
+              futuras generaciones.</p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0 animate__animated" data-animation="animate__fadeInUp"
+          data-animation-delay="0.3s">
+          <h4>Enlaces</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#about-us-preview">Nosotros</a></li>
+            <li><a href="#servicios">Proyectos</a></li>
+            <li><a href="#nuevoTestimonios">Testimonios</a></li>
+            <li><a href="#blog-preview">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 animate__animated" data-animation="animate__fadeInUp"
+          data-animation-delay="0.5s">
+          <h4>Proyectos Clave</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios">Reforestación</a></li>
+            <li><a href="#servicios">Gestión de Residuos</a></li>
+            <li><a href="#servicios">Recursos Hídricos</a></li>
+            <li><a href="#servicios">Educación Ambiental</a></li>
+            <li><a href="#servicios">Campañas de Concienciación</a></li>
+            <li><a href="#servicios">Agricultura Sostenible</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 animate__animated" data-animation="animate__fadeInUp" data-animation-delay="0.7s">
+          <h4>Contacto</h4>
+          <div class="footer-contact">
+            <p><i class="bi bi-geo-alt"></i> Av. de la Naturaleza 45, 28001 Madrid</p>
+            <p><i class="bi bi-telephone"></i> +34 987 654 321</p>
+            <p><i class="bi bi-envelope"></i> contacto@ecofuturoong.org</p>
+            <p><i class="bi bi-clock"></i> Lun-Vie: 9:00 - 17:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2025 ECOFUTURO ONG. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Política de Privacidad | Aviso Legal | Cookies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#inicio" class="back-to-top" id="backToTop"> <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
