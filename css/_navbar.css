@@ -1,0 +1,77 @@
+/* ========================================= */
+/* NAVEGACIÓN (NAVBAR)                       */
+/* ========================================= */
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: var(--transition);
+    background-color: transparent; /* Inicialmente transparente */
+}
+
+#mainNav.navbar-scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--primary-color); /* Color de fondo al hacer scroll */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--text-white); /* Color del logo inicial (sobre fondo transparente/imagen) */
+}
+
+.logo-text {
+    font-family: 'Permanent Marker', cursive; /* Aplica la nueva fuente con una de respaldo */
+    text-shadow:  0 1px 5px rgba(0, 0, 0, 0.336);
+    color: var(--text-white);
+}
+
+.logo-accent {
+    color: var(--light-accent); /* Acento para el logo */
+}
+
+#mainNav.navbar-scrolled .navbar-brand,
+#mainNav.navbar-scrolled .logo-text,
+#mainNav.navbar-scrolled .logo-accent {
+    color: var(--text-white); /* Mantener blanco cuando scrolled */
+}
+
+.navbar-toggler {
+    color: var(--text-white); /* Toggler blanco al inicio */
+    border: none;
+    font-size: 1.5rem;
+}
+
+#mainNav.navbar-scrolled .navbar-toggler {
+    color: var(--text-white); /* Toggler blanco cuando scrolled */
+}
+
+.nav-link {
+    color: var(--text-white) !important; /* Links de navegación iniciales (sobre fondo transparente/imagen) */
+    font-weight: 400;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+}
+
+#mainNav.navbar-scrolled .nav-link {
+    color: var(--text-white) !important; /* Links de navegación blancos cuando scrolled */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color); /* Línea activa */
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}

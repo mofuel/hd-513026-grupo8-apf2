@@ -1,0 +1,86 @@
+/* ========================================= */
+/* MEDIA QUERIES (Responsividad)             */
+/* ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    /* Si el usuario prefiere movimiento reducido, ajusta la transición del carrusel */
+    .carousel-item {
+        transition: transform 0.9s ease-in-out; /* Reduce el tiempo de transición para un efecto más suave */
+    }
+}
+
+/* Media Query para tabletas (768px a 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #testimonialCarousel .carousel-inner {
+        margin-bottom: -260px;
+    }
+    #testimonialCarousel .carousel-control-prev {
+        position: absolute;
+        bottom: -10px; /* Colocarlas abajo */
+        left: 50%;
+        transform: translateX(-60px); /* Centrarlas horizontalmente */
+        top: initial; /* Quitar la posición vertical anterior */
+    }
+    #testimonialCarousel .carousel-control-next {
+        position: absolute;
+        bottom: -10px; /* Colocarlas abajo */
+        left: 50%;
+        transform: translateX(60%); /* Centrarlas horizontalmente */
+        top: initial; /* Quitar la posición vertical anterior */
+    }
+}
+
+/* Media Query para dispositivos móviles grandes (576px a 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #testimonialCarousel .carousel-inner {
+        margin-bottom: -200px;
+    }
+    #testimonialCarousel .carousel-control-prev {
+        position: absolute;
+        bottom: 10px; /* Colocarlas abajo */
+        left: 50%;
+        transform: translateX(-60px); /* Centrarlas horizontalmente */
+        top: initial; /* Quitar la posición vertical anterior */
+    }
+    #testimonialCarousel .carousel-control-next {
+        position: absolute;
+        bottom: 10px; /* Colocarlas abajo */
+        left: 50%;
+        transform: translateX(60%); /* Centrarlas horizontalmente */
+        top: initial; /* Quitar la posición vertical anterior */
+    }
+}
+
+/* Media Query para dispositivos móviles pequeños (hasta 575.98px) */
+@media (max-width: 575.98px) {
+    #testimonialCarousel .carousel-inner {
+        margin-bottom: -200px;
+    }
+    #testimonialCarousel .carousel-control-prev {
+        position: absolute;
+        bottom: 10px; /* Colocarlas abajo */
+        left: 50%;
+        transform: translateX(-60px); /* Centrarlas horizontalmente */
+        top: initial; /* Quitar la posición vertical anterior */
+    }
+    #testimonialCarousel .carousel-control-next {
+        position: absolute;
+        bottom: 10px; /* Colocarlas abajo */
+        left: 50%;
+        transform: translateX(60%); /* Centrarlas horizontalmente */
+        top: initial; /* Quitar la posición vertical anterior */
+    }
+
+    /* Ajustes adicionales para dispositivos muy pequeños */
+    .carousel-caption h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título principal del carrusel */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Reduce el tamaño del párrafo del carrusel */
+    }
+
+    .section-header h2 {
+        font-size: 2rem; /* Reduce el tamaño de los títulos de sección */
+    }
+}

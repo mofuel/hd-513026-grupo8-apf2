@@ -1,0 +1,153 @@
+/* ========================================= */
+/* FOOTER                                    */
+/* ========================================= */
+.footer {
+    background-color:var(--primary-color);
+    color: var(--text-white);
+    padding-top: var(--space-xl);
+    position: relative !important;
+    z-index: 1000 !important;
+    pointer-events: auto !important;
+}
+
+.footer h3 {
+        font-family: 'Permanent Marker', cursive; /* Aplica la nueva fuente con una de respaldo */
+    text-shadow:  0 1px 5px rgba(0, 0, 0, 0.336);
+
+    color: var(--text-white);
+    font-size: 1.75rem;
+    margin-bottom: var(--space-md);
+}
+
+.footer h3 span {
+    color: var(--accent-color);
+    text-shadow:  0 1px 5px rgba(0, 0, 0, 0.486);
+        font-family: 'Permanent Marker', cursive; /* Aplica la nueva fuente con una de respaldo */
+
+}
+
+.footer h4 {
+    color: var(--text-white);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-md);
+    position: relative;
+    padding-bottom: var(--space-xs);
+}
+
+.footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.social-links {
+    display: flex;
+    margin-top: var(--space-md);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: var(--space-sm);
+    color: var(--text-white);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+    
+    color: white;
+    transform: translateY(-5px);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-xs);
+}
+
+.footer-links a {
+    
+    color: white; /* Usar text-light para links más suaves en el footer */
+    transition: var(--transition);
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.footer-links a:hover {
+        font-weight: bold;
+
+    color: var(--accent-color)   ;
+    transform: translateX(5px);
+    text-shadow:  0 1px 5px white;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+    color: white; /* Usar text-light para el texto de contacto */
+}
+
+.footer-contact p i {
+    color: white;
+    margin-right: var(--space-xs);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--space-md) 0;
+    margin-top: var(--space-xl);
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* BOTÓN "VOLVER ARRIBA" (BACK TO TOP)       */
+/* ========================================= */
+.back-to-top {
+        z-index: 1100 !important; /* Debe estar encima del footer y otros elementos */
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    transform: translateY(-5px);
+}

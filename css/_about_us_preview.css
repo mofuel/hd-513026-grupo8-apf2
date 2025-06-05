@@ -1,0 +1,52 @@
+/* ========================================= */
+/* SECCIÓN "SOBRE ECOFUTURO ONG" (Resumen)   */
+/* ========================================= */
+.about-preview-section {
+    padding: var(--space-xl) 0;
+    background-color: white; /* O usa var(--text-white) si prefieres */
+}
+
+.about-preview-section .row {
+    align-items: center; /* Esto ya ayuda a alinear las columnas, pero no la imagen dentro de su div */
+}
+
+.about-preview-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.about-preview-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+    color: var(--text-color);
+}
+
+.about-preview-img {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    /* --- INICIO DE CAMBIOS/ADICIONES AQUÍ --- */
+    display: flex; /* Convierte el contenedor en un flex container */
+    align-items: center; /* Centra verticalmente el contenido flex (la imagen) */
+    justify-content: center; /* Centra horizontalmente el contenido flex (la imagen) */
+    width: 100%; /* Asegura que ocupe todo el ancho de su columna */
+    height: 100%; /* Asegura que ocupe toda la altura disponible de su columna */
+    /* --- FIN DE CAMBIOS/ADICIONES --- */
+}
+
+.about-preview-img img {
+    max-width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    display: block; /* Sigue siendo un bloque para controlarlo */
+    transition: transform 0.3s ease;
+    /* --- INICIO DE CAMBIOS/ADICIONES AQUÍ --- */
+    width: 100%; /* Fuerza la imagen a ocupar el 100% del ancho de su padre flex */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse si hay diferencia de relación de aspecto */
+    /* --- FIN DE CAMBIOS/ADICIONES --- */
+}
+
+.about-preview-img img:hover {
+    transform: scale(1.03); /* Ligero zoom al pasar el mouse */
+}

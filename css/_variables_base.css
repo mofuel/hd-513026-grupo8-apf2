@@ -1,0 +1,136 @@
+/* ========================================= */
+/* VARIABLES GLOBALES Y ESTILOS BASE         */
+/* ========================================= */
+
+:root {
+    /* Variables de Colores Ambientales (tu paleta) */
+    --color-verde-claro: #A8E6CF; /* Verde menta, suave y fresco */
+    --color-verde-medio: #39aa9d; /* Verde agua, un poco más oscuro */
+    --color-verde-oscuro: #40b0c4; /* Verde bosque, para contrastes */
+    --color-azul-claro: #277daf; /* Azul cielo suave */
+    --color-azul-medio: #40b0c4; /* Azul cerúleo, vibrante */
+    --color-cian-claro: #2fa7b9; /* Cian muy claro, casi blanco-azulado */
+    --color-fondo-claro: #F8F8F8; /* Gris muy claro, casi blanco */
+    --color-texto-principal: #000000; /* Gris oscuro para texto */
+    --color-texto-secundario: #000000; /* Gris medio para descripciones */
+    --light-text-color: #ffffff; /* Para texto sobre fondos oscuros */
+
+    /* Mapeo de Variables de Color Originales a la Paleta Ambiental */
+    --primary-color: #a8c916; /* O tu color primario */
+    --primary-dark: #538821; /* Una versión más oscura de tu color primario */
+    --secondary-color: var(--color-verde-medio); /* #64B6AC */
+    --accent-color: var(--color-azul-medio); /* #8AC6D1 */
+    --light-accent: var(--color-cian-claro); /* #C3F0F7 */
+    --text-color: var(--color-texto-principal);
+    --text-light: var(--color-texto-secundario);
+    --text-white: var(--light-text-color); /* Blanco */
+    --bg-light: #e0f9ffb2;
+    --bg-dark: var(--color-verde-oscuro); /* Usar el verde oscuro para fondos oscuros */
+
+    /* Font variables */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+
+    /* Spacing variables (8px spacing system) */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+
+    /* Other variables */
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Espacio para la barra de navegación fija */
+}
+
+body {
+    font-family: var(--body-font);
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--text-color);
+    overflow-x: hidden; /* Evita el scroll horizontal no deseado */
+}
+
+/* Estilos de encabezados (h1-h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+}
+
+/* Estilos de párrafos */
+p {
+    margin-bottom: var(--space-sm);
+}
+
+/* Estilos de enlaces */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Estilos generales de encabezados de sección */
+.section-header {
+    margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: var(--space-sm);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* Clases de utilidad de texto */
+.text-primary {
+    color: var(--accent-color) !important;
+}
+
+/* Estilos de botones generales */
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+}
